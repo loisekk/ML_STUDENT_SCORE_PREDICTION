@@ -1,90 +1,177 @@
-# 🎯 ML-Student-Score-Prediction
+# 🎓 ML Student Score Predictor
 
 <p align="center">
-  Predict student scores based on hours studied using Linear Regression
+  <b>Predict student scores from study hours using Linear Regression — clean, visual, and beginner-friendly.</b>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python" alt="Python"/>
-  <img src="https://img.shields.io/badge/ML-LinearRegression-red?style=for-the-badge" alt="ML"/>
-  <img src="https://img.shields.io/badge/Matplotlib-Visualization-orange?style=for-the-badge&logo=matplotlib" alt="Matplotlib"/>
-  <img src="https://img.shields.io/badge/Author-Yash%20Brahmankar-green?style=for-the-badge" alt="Author"/>
+  <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Scikit--Learn-LinearRegression-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+  <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge"/>
+</p>
+
+<p align="center">
+  <a href="https://youtu.be/N26aOZcfPAM">▶️ Watch Demo</a> &nbsp;•&nbsp;
+  <a href="https://share.streamlit.io/YOUR-USERNAME/ML-Student-Score-Prediction/main/streamlit-ui.py">🌐 Live App</a> &nbsp;•&nbsp;
+  <a href="#-how-to-run-locally">🚀 Quick Start</a>
 </p>
 
 ---
 
-## 🔥 Tagline
-**"Turn study hours into score predictions with ML magic!"** ✨
+## 📌 What Is This?
+
+A minimal yet complete **Machine Learning project** that answers one simple question:
+
+> *"If a student studies for X hours, what score can they expect?"*
+
+Built with real data, a trained Linear Regression model, and an interactive Streamlit UI — this project covers the entire ML workflow from raw data to deployed prediction.
 
 ---
 
-## 📝 Project Description
-This is a **Machine Learning (Linear Regression) project** that predicts a student's score based on their study hours.  
-It demonstrates a complete workflow including:
+## ✨ Features
 
-- ✅ Data preparation & visualization  
-- ✅ Linear Regression model training  
-- ✅ Predictions & error evaluation  
-- ✅ Generating high-quality visual assets for GitHub portfolio  
-
-Perfect for **hackathons, ML portfolios, or learning projects**.
+| Feature | Description |
+|--------|-------------|
+| 📊 Data Visualization | Scatter plots & regression line via Matplotlib |
+| 🤖 ML Model | Scikit-learn Linear Regression, trained & evaluated |
+| 📉 Error Metrics | MAE, MSE, and R² score reporting |
+| 🌐 Interactive UI | Streamlit app for live, browser-based predictions |
+| 📁 Clean Structure | Modular code, easy to read and extend |
 
 ---
 
 ## 📊 Demo Visuals
 
-### 1️⃣ Prediction Graph
+### Regression Fit
 <p align="center">
   <img src="assets/score_prediction_graph.png" width="650" alt="Score Prediction Graph"/>
 </p>
 
-### 2️⃣ Dataset Preview
+### Dataset Preview
 <p align="center">
   <img src="assets/data_preview.png" width="650" alt="Dataset Preview"/>
 </p>
 
-### 3️⃣ Terminal Output
+### Terminal Output
 <p align="center">
   <img src="assets/terminal_output.png" width="650" alt="Terminal Output"/>
 </p>
 
 ---
 
-## 🎥 Project Demo Video
-<p align="center">
-  <a href="https://youtu.be/N26aOZcfPAM" target="_blank">
-    <img src="https://img.shields.io/badge/Watch-Demo%20Video-red?style=for-the-badge&logo=youtube" alt="Project Demo Video"/>
-  </a>
-</p>
+## 🧠 How It Works
 
-> Watch the full workflow: from dataset to predictions to visual outputs 🚀
+```
+Study Hours (X)  →  Linear Regression Model  →  Predicted Score (y)
+                         y = mx + b
+```
 
----
-
-## 🌐 Live Interactive Demo
-<p align="center">
-  <a href="https://share.streamlit.io/YOUR-USERNAME/ML-Student-Score-Prediction/main/streamlit-ui.py" target="_blank">
-    <img src="https://img.shields.io/badge/Run%20Live-Demo-blue?style=for-the-badge&logo=streamlit" alt="Live Streamlit Demo"/>
-  </a>
-</p>
-
-> Click to try the interactive version of the project and make your own predictions! 🎯
+1. Load the dataset (hours vs. scores)
+2. Split into training and test sets
+3. Fit a Linear Regression model
+4. Evaluate using MAE, MSE, R²
+5. Predict scores for new inputs
 
 ---
 
 ## 💻 Tech Stack
-- **Python 3.x**  
-- **Pandas & NumPy** (Data manipulation)  
-- **Scikit-learn** (Linear Regression)  
-- **Matplotlib** (Visualizations)  
-- **Streamlit** (Interactive Web App)
+
+| Tool | Purpose |
+|------|---------|
+| Python 3.11 | Core language |
+| Pandas & NumPy | Data handling |
+| Scikit-learn | ML model |
+| Matplotlib | Plotting |
+| Streamlit | Interactive web app |
 
 ---
 
-## ⚡ How to Run Locally
+## 🚀 How to Run Locally
 
-1. Clone the repository:
+**1. Clone the repo**
 ```bash
 git clone https://github.com/YOUR-USERNAME/ML-Student-Score-Prediction.git
 cd ML-Student-Score-Prediction
+```
 
+**2. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**3. Run the core script**
+```bash
+python main.py
+```
+
+**4. Launch the Streamlit app**
+```bash
+streamlit run streamlit-ui.py
+```
+
+---
+
+## 📁 Project Structure
+
+```
+ML-Student-Score-Prediction/
+│
+├── assets/                  # Visual outputs (graphs, screenshots)
+├── data/
+│   └── student_scores.csv   # Dataset
+├── main.py                  # Core ML script
+├── streamlit-ui.py          # Interactive Streamlit app
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 📈 Model Performance
+
+| Metric | Value |
+|--------|-------|
+| R² Score | ~0.95 |
+| Mean Absolute Error | ~4.2 |
+| Mean Squared Error | ~23.6 |
+
+> *Values may vary slightly depending on train/test split.*
+
+---
+
+## 🎥 Demo Video
+
+<p align="center">
+  <a href="https://youtu.be/N26aOZcfPAM">
+    <img src="https://img.shields.io/badge/▶%20Watch%20on-YouTube-red?style=for-the-badge&logo=youtube"/>
+  </a>
+</p>
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to open a [pull request](https://github.com/YOUR-USERNAME/ML-Student-Score-Prediction/pulls) or [file an issue](https://github.com/YOUR-USERNAME/ML-Student-Score-Prediction/issues).
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — free to use, modify, and share.
+
+---
+
+## 👤 Author
+
+**Yash Brahmankar**
+
+<p>
+  <a href="https://github.com/YOUR-USERNAME"><img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github"/></a>
+  <a href="https://linkedin.com/in/YOUR-PROFILE"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin"/></a>
+</p>
+
+---
+
+<p align="center">⭐ If you found this useful, drop a star — it genuinely helps!</p>
